@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "todo: update",
-  description: "todo: update",
+  title: "Embedded Checkout Quickstart",
+  description: "Crossmint's Embedded Checkout Quickstart",
 };
 
 export default function RootLayout({
