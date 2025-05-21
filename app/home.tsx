@@ -34,48 +34,36 @@ export function HomeContent() {
             <div className="flex items-center gap-2 mb-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-gray-500"
+                className="h-6 w-6 text-gray-800"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                strokeWidth="2"
               >
                 <title>Test payments</title>
-                <rect
-                  x="3"
-                  y="5"
-                  width="18"
-                  height="14"
-                  rx="2"
-                  strokeWidth="2"
-                />
-                <rect
-                  x="7"
-                  y="9"
-                  width="2"
-                  height="2"
-                  rx="1"
-                  fill="currentColor"
-                />
+                <rect x="2" y="5" width="20" height="14" rx="2" ry="2" />
+                <line x1="2" y1="9" x2="22" y2="9" />
               </svg>
-              <span className="font-semibold text-gray-700 text-sm">
+              <span className="text-lg font-semibold text-gray-900">
                 Test payments
               </span>
             </div>
-            <div className="text-sm text-gray-500 mb-2">
+            <div className="text-base text-gray-600 mb-2">
               Use the following test card to complete your payment
             </div>
             <div className="flex items-center gap-2 w-full">
-              <span className="font-mono text-base bg-gray-50 px-3 py-1 rounded border select-all flex-1">
+              <span className="font-mono text-base bg-gray-50 px-3 py-1.5 rounded-md border select-all flex-1">
                 4242 4242 4242 4242
               </span>
               <button
                 type="button"
-                className="text-xs px-2 py-1 bg-gray-100 rounded border border-gray-200 hover:bg-gray-200"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-800 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
                 onClick={() =>
                   navigator.clipboard.writeText("4242 4242 4242 4242")
                 }
               >
-                Copy
+                <Image src="/copy.svg" alt="Copy" width={16} height={16} />
+                <span>Copy</span>
               </button>
             </div>
           </div>
