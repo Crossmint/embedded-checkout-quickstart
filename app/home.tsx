@@ -10,11 +10,11 @@ if (!collectionId) {
 
 export function HomeContent() {
   return (
-    <div className="w-full flex items-center justify-center py-8">
+    <div className="w-full flex items-center justify-center py-8 md:pt-4">
       <div className="bg-white rounded-2xl shadow-lg border max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden">
         {/* Left: Product info */}
         <div className="flex flex-col items-center justify-center p-10 bg-white rounded-l-2xl">
-          <h1 className="text-2xl font-bold mb-1 text-center w-full mb-6">
+          <h1 className="text-2xl font-bold text-center w-full mb-6">
             Sonic Ledger Pass
           </h1>
           <Image
