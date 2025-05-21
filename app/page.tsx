@@ -3,11 +3,11 @@ import { HomeContent } from "@/app/home";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[0px_1fr_60px] items-center justify-items-center min-h-screen p-2 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+      <main className="flex flex-col items-center sm:items-start">
         <HomeContent />
       </main>
-      <footer className="row-start-3 flex flex-col gap-4 items-center justify-center">
+      <footer className="flex flex-col gap-4 items-center justify-center">
         <div className="flex gap-6 flex-wrap items-center justify-center">
           <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
