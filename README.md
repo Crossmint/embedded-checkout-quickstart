@@ -10,7 +10,7 @@
 
 <br>
 <br>
-<img src="https://github.com/user-attachments/assets/76a983ab-499e-4d12-af7a-0ae17cb0b6cd" alt="Image" width="full">
+<img src="https://github.com/user-attachments/assets/bcb689ab-8991-4d25-905f-aac75b2946e0" alt="Image" width="full">
 </div>
 
 ## Introduction
@@ -19,15 +19,15 @@ Allow your customers to buy NFTs with credit card and crypto payments, using Cro
 
 **Learn how to:**
 
-- Put your NFTs up for sale
-- Accept payments in multiple currencies (credit card and crypto)
-- Mint NFTs directly to a wallet or email address
+- Showcase and sell your unique NFTs
+- Seamlessly accept both credit card and cryptocurrency payments
+- Deliver NFTs directly to a buyer's wallet or email address
 
 ## Deploy
 
 Easily deploy the template to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FCrossmint%2Fembedded-checkout-quickstart&env=NEXT_PUBLIC_CROSSMINT_API_KEY)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FCrossmint%2Fembedded-checkout-quickstart&env=NEXT_PUBLIC_CROSSMINT_API_KEY&env=NEXT_PUBLIC_CROSSMINT_COLLECTION_ID)
 
 ## Setup
 
@@ -52,18 +52,20 @@ bun install
 cp .env.template .env
 ```
 
-4. Create a collection on Crossmint and add it to the `.env` file.
+4. Create a developer account in the [Staging Console](https://staging.crossmint.com/signin?callbackUrl=/console).
+5. Create a new collection in the console following [this guide](https://docs.crossmint.com/payments/guides/create-collection) or import yours using [this guide](https://docs.crossmint.com/payments/guides/register-collection), and have your `collectionId` ready.
+6. Make sure you follow the maximum prices for collections set in staging outlined [here](https://docs.crossmint.com/payments/advanced/testing-tips#limits-in-staging).
+7. Add your Crossmint `collectionId` to the `.env` file.
 ```bash
 NEXT_PUBLIC_CROSSMINT_COLLECTION_ID=your_collection_id
 ```
 
-5. Get a Crossmint client API key from [here](https://docs.crossmint.com/introduction/platform/api-keys/client-side) and add it to the `.env` file. Make sure your API key has the following scope: `orders.create`.
-
+8. Get your client-side development key from the [Crossmint Console Overview](https://staging.crossmint.com/console/overview) and add it to the `.env` file. Make sure your API key has the following scope: `orders.create`.
 ```bash
 NEXT_PUBLIC_CROSSMINT_API_KEY=your_api_key
 ```
 
-6. Run the development server:
+9. Run the development server:
 ```bash
 npm run dev
 # or
@@ -76,8 +78,16 @@ bun dev
 
 ## Using in production
 
-1. Create a [production API key](https://docs.crossmint.com/introduction/platform/api-keys/client-side). Make sure your API key has the following scope: `orders.create`.
+1. Create a [production API key](https://docs.crossmint.com/introduction/platform/api-keys/client-side). Make sure your API key has the following scope: `orders.create`. Get your client-side production key from [https://staging.crossmint.com/console/overview](https://staging.crossmint.com/console/overview).
 2. Create your production collection on Crossmint.  
 3. Update the `NEXT_PUBLIC_CROSSMINT_API_KEY` with your production API key.
 4. Update the `NEXT_PUBLIC_CROSSMINT_COLLECTION_ID` with your production collection ID.
 5. Deploy your application to a production environment.
+
+## Advanced Usage
+
+For advanced usage, refer to the Crossmint documentation:
+
+- Add Apple Pay: [https://docs.crossmint.com/payments/embedded/guides/apple-pay](https://docs.crossmint.com/payments/embedded/guides/apple-pay)
+- Customize the UI: [https://docs.crossmint.com/payments/embedded/guides/ui-customization](https://docs.crossmint.com/payments/embedded/guides/ui-customization)
+- Edit payment methods: [https://docs.crossmint.com/payments/embedded/guides/payment-methods](https://docs.crossmint.com/payments/embedded/guides/payment-methods)
