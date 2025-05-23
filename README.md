@@ -27,7 +27,7 @@ Allow your customers to buy NFTs with credit card and crypto payments, using Cro
 
 - Create a developer account in the [Staging Console](https://staging.crossmint.com/signin?callbackUrl=/console).
 - Create a [client-side API key](https://docs.crossmint.com/introduction/platform/api-keys/client-side) with the following scope: `orders.create`.
-- Create a [new token collection](https://docs.crossmint.com/payments/guides/create-collection) on [import yours](https://docs.crossmint.com/payments/guides/register-collection) in the console, and have your `collectionId` ready.
+- Create a [new collection](https://docs.crossmint.com/payments/guides/create-collection) or [import yours](https://docs.crossmint.com/payments/guides/register-collection) in the console, and have your `collectionId` ready.
 - Make sure your collection has at least one NFT configured
 - From the detail view of your collection, navigate to the Checkout tab to configure the pricing settings and enable Credit Card and Crypto payments.
 
@@ -90,7 +90,7 @@ Easily deploy the template to Vercel with the button below. You will need to set
 ## Using in production
 
 1. Embedded checkout is available on Staging for testing purposes. If you would like to use this on Production, [contact sales](https://www.crossmint.com/contact/sales) to request access.
-2. Create and account in the [Production Console](https://www.crossmint.com/signin?callbackUrl=/console), add your collection and configure the payment settings from the Checkout tab.
+2. Create an account in the [Production Console](https://www.crossmint.com/signin?callbackUrl=/console), add your collection and configure the payment settings from the Checkout tab.
 3. Verify your account as the project owner and verify your collection. [Learn more](https://docs.crossmint.com/introduction/platform/account-verification) about verifications.
 4. Create a [production client-side API key](https://docs.crossmint.com/introduction/platform/api-keys/client-side) with the following scope: `orders.create`.
 5. Update your `.env` file with your production variables.
