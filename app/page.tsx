@@ -29,6 +29,20 @@ export default function Home() {
             {/* Right: Checkout */}
             <div className="flex flex-col justify-center p-8">
               <CrossmintEmbeddedCheckout
+                appearance={{
+                  rules: {
+                    PrimaryButton: {
+                      colors: {
+                        background: "#000000", // Primary button background color
+                      },
+                      hover: {
+                        colors: {
+                          background: "#3C4043", // Primary button hover background color
+                        },
+                      },
+                    },
+                  },
+                }}
                 lineItems={{
                   collectionLocator: `crossmint:${collectionId}`, // Collection identifier: crossmint:<YOUR_COLLECTION_ID>[:TEMPLATE_ID] or <blockchain>:<contract-address>
                   callData: {
