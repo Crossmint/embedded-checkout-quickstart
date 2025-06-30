@@ -5,7 +5,7 @@
 <h1>Embedded Checkout Quickstart</h1>
 
 <div align="center">
-<a href="https://embedded-checkout.demos-crossmint.com/">Live Demo</a> | <a href="https://docs.crossmint.com/payments/embedded/overview">Docs</a> | <a href="https://github.com/crossmint">See all quickstarts</a>
+<a href="https://embedded-checkout.demos-crossmint.com/">Live Demo</a> | <a href="https://docs.crossmint.com/payments/embedded/overview">Docs</a> | <a href="https://www.crossmint.com/quickstarts">See all quickstarts</a>
 </div>
 
 <br>
